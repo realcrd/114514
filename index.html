@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="media-src *; img-src *; connect-src *;">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+        <link rel="stylesheet" type="text/css" href="index.css" tppabs="http://129.211.173.86/finance_proj/html/wcc/css/index.css">
+        <title>申请人领取 - 学生校园通行码领取</title>
+        <!-- JQuery样式 -->
+        <script type="text/javascript" src="jquery-3.4.1.min.js" tppabs="http://129.211.173.86/finance_proj/html/wcc/js/jquery-3.4.1.min.js"></script>
+        <!-- SUI mobile框架 -->
+        <link rel="stylesheet" href="sm.min.css" tppabs="http://129.211.173.86/finance_proj/html/wcc/css/sm.min.css">
+        <script src="sm.js" tppabs="http://129.211.173.86/finance_proj/html/wcc/js/sm.js"></script>
+        <link rel="stylesheet" href="sm-extend.min.css" tppabs="http://129.211.173.86/finance_proj/html/wcc/css/sm-extend.min.css">
+        <script src="sm-extend.js" tppabs="http://129.211.173.86/finance_proj/html/wcc/js/sm-extend.js"></script>
+        <!-- 自定义CSS -->
+        <link rel="stylesheet" href="newcss.css" tppabs="http://129.211.173.86/finance_proj/html/wcc/css/newcss.css">
+    </head>
+    <body>
+        <div class="page-group" style="font-family: KaiTi; text-transform: none;">
+            <div class="page page-current">
+                <header class="bar bar-nav" style="background-color: #e7e7e7; margin-left: -10px; box-shadow: 0px 1px 6px #9a9a9a;">
+                    <a class="pull-left" align="center" style="height: 45px; width: 45px; background-color: #0894ec; line-height:45px;">
+                        <span class="icon left"></span>
+                    </a>
+                    <a class="icon more pull-right" style="margin-top: 10px;"></a>
+                    <div class="title" style="height: 34px; width: 80px; line-height: 34px; background-color: #fff; color: green; position: static; margin-left: 52px; margin-top: 6px; font-size: 12px;">通过</div>
+                </header>
+                <nav class="bar bar-tab" style="height: 60px; line-height: 12px; box-shadow: 0px 13px 11px -13px #9a9a9a inset;;">
+                    <hr style="margin-top: 26px;" />
+                    <div align="center" style="font-size: 14px;">版权所有 © 浙江工业大学</div>
+                </nav>
+                <div class="content" style="bottom: 3rem;">
+                    <div align="center" style="margin-top: 68px;"><img style="width: 90%;" src="top.png" tppabs="http://129.211.173.86/finance_proj/html/wcc/img/top.png"></div>
+                    <div align="center" style="font-size: 14px;">Everyone is responsible for epidemic prevention on campus</div>
+                    <div align="center" style="margin-top: 17px; font-size: 20px;"><span id="username">吴凯乐&nbsp;</span> 校园通行码 <span style="font-size: 14px;"> Campus Pass Code</span></div>
+                    <div align="center" style="margin-top: 7px; font-size: 20px;">
+                      <p>法学院</p>
+</div>
+                    <div align="center" style="font-size: 20px;">30226199903154791</div>
+                    <div align="center" style="margin-top: 17px; font-size: 14px; color: #aaa;"> </div>
+					<div align="center" style="margin-top: 17px; font-size: 30px;" id="ts"></div>
+<script language="JavaScript" type="text/javascript">
+function newTs(){
+var today = new Date();
+yrNow = today.getYear()+1900;//年
+yueNow= today.getMonth()+1;//月
+riNow = today.getDate();//日
+hrNow = today.getHours();//小时
+mnNow = today.getMinutes();//分
+scNow = today.getSeconds();//秒
+	if(hrNow<10){
+document.getElementById("ts").innerText = '0'+yueNow+'-'+riNow+' '+'0'+hrNow+':'+ mnNow+':'+scNow;
+	}
+	else{
+		document.getElementById("ts").innerText = '0'+yueNow+'-'+riNow+' '+hrNow+':'+ mnNow+':'+scNow;
+	}
+setTimeout("newTs()",500);
+}
+newTs();
+</script>
+<div align="center" style="margin-top: 17px; font-size: 14px;">&nbsp;</div>
+                    <div align="center" style="margin-top: 0px;"><img id="wcc-img-s" style="width: 200px; height: 200px;" src="qrcode.png" tppabs="http://129.211.173.86/finance_proj/html/wcc/img/qrcode.png"></div>
+                    <div style="margin-top: 0px; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;凭此码可在学校朝晖校区、屏峰校区、莫干山校区范围内配合有效证件通行，请主动出示，配合检查。</div>
+                    <div style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;This code can be used to pass with valid documents in the Zhaohui campus, Pingfeng campus and Moganshan campus. Please show them and cooperate with the inspection.</div>
+
+                </div>
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js" tppabs="http://129.211.173.86/finance_proj/html/wcc/js/index.js"></script>
+        <script type="text/javascript" src="new-function.js" tppabs="http://129.211.173.86/finance_proj/html/wcc/js/new-function.js"></script>
+        <script>
+            $.init();
+        </script>
+    </body>
+</html>
